@@ -13,7 +13,7 @@ public class PlayVideo : MonoBehaviour
     [SerializeField]
     private RawImage image;
     [SerializeField]
-    private Image contentImage;
+    private Image displayImage;
     [SerializeField]
     private List<GameObject> contentContainers;
 
@@ -47,7 +47,7 @@ public class PlayVideo : MonoBehaviour
 
     public void EndReached(VideoPlayer player)
     {
-        contentImage.gameObject.SetActive(true);
+        displayImage.gameObject.SetActive(true);
         contentContainers[currentModule].SetActive(true);
         Debug.Log("Set active?");
     }

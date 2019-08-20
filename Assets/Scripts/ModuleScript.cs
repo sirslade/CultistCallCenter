@@ -14,23 +14,21 @@ public class ModuleScript : MonoBehaviour
     [SerializeField]
     private int moduleNumber;
     [SerializeField]
-    private List<Image> contentImages;
-    [SerializeField]
     private List<GameObject> contentSections;
     [SerializeField]
     private NavigationScript navScript;
 
+    [SerializeField]
+    private List<Sprite> displayImages;
+    [SerializeField]
+    private Image displayImage;
+    
 
-    public void CorrectAnswer()
+
+    private void Awake()
     {
-        FinishSection();
+        contentSections[0].SetActive(true);
     }
-
-    public void IncorrectAnswer()
-    {
-        // Some sort of try again thing
-    }
-
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +40,17 @@ public class ModuleScript : MonoBehaviour
     void Update()
     {
        
+    }
+
+    
+    public void CorrectAnswer()
+    {
+        FinishSection();
+    }
+
+    public void IncorrectAnswer()
+    {
+        // Some sort of show 
     }
 
     void FinishSection()
