@@ -19,7 +19,10 @@ public class NavigationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey("escape"))
+        {
+            Exit();
+        }
     }
 
     private void Awake()
