@@ -12,6 +12,10 @@ public class PlayVideo : MonoBehaviour
     private List<VideoClip> videos;
     [SerializeField]
     private RawImage image;
+    [SerializeField]
+    private Image contentImage;
+    [SerializeField]
+    private List<GameObject> contentContainers;
 
     private VideoClip videoToPlay;
     private VideoPlayer videoPlayer;
@@ -43,7 +47,9 @@ public class PlayVideo : MonoBehaviour
 
     public void EndReached(VideoPlayer player)
     {
-        
+        contentImage.gameObject.SetActive(true);
+        contentContainers[currentModule].SetActive(true);
+        Debug.Log("Set active?");
     }
 
      IEnumerator playVideo()

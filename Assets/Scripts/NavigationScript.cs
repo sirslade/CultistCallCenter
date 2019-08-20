@@ -8,6 +8,13 @@ using UnityEngine.SceneManagement;
 public class NavigationScript : MonoBehaviour
 {
     private PlayVideo videoScript;
+    
+    [SerializeField]
+    private List<Button> modButtons;
+    [SerializeField]
+    private Image contentImage;
+    [SerializeField]
+    private List<Sprite> contentImages;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +38,20 @@ public class NavigationScript : MonoBehaviour
 
     public void OpenModule(int module)
     {
+        if(contentImage.gameObject.activeSelf)
+        {
+            contentImage.gameObject.SetActive(false);
+        }
+        contentImage.sprite = contentImages[module];
         videoScript.playModule(module);
+    }
+
+    public void ModuleComplete(int module)
+    {
+        Text text = modButtons[module].GetComponentInChildren<Text>();
+        text.text = "Module Complete!";
+        text.color = Color.green;
+        text.fontSize = 14;
     }
 
     public void Exit()
