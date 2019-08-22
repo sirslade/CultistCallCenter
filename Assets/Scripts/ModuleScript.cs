@@ -23,7 +23,9 @@ public class ModuleScript : MonoBehaviour
     [SerializeField]
     private Image displayImage;
     
-
+    private int orderCountForModule4 = 0;
+    [SerializeField]
+    private List<Button> buttonListForModule4;
 
     private void Awake()
     {
@@ -64,6 +66,7 @@ public class ModuleScript : MonoBehaviour
         if(currentSection > contentSections.Count - 1)
         {
             navScript.ModuleComplete(moduleNumber);
+            gameObject.SetActive(false);
         } else {
             contentSections[currentSection].SetActive(true);
             if(!(currentSection >= displayImages.Count)) {
@@ -76,5 +79,24 @@ public class ModuleScript : MonoBehaviour
     {
         currentSection = 0;
         displayImage.gameObject.SetActive(false);
+        gameObject.SetActive(false);
+    }
+
+
+    public void OrderedButton(int order)
+    {
+        Button button = buttonListForModule4[order];
+        if(orderCountForModule4 == order)
+        {
+            button.enabled = false;
+            Text buttonText = button.GetComponentInChildren<Text>();
+            buttonText.color = Color.green;
+            buttonText.text = buttonText.text + " ✓";
+            orderCountForModule4++;
+        }
+        if(order == 3)
+        {
+            FinishSection();
+        }
     }
 }

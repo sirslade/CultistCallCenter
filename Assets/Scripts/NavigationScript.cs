@@ -16,6 +16,8 @@ public class NavigationScript : MonoBehaviour
     private Image contentImage;
     [SerializeField]
     private List<Sprite> contentImages;
+    [SerializeField]
+    private List<GameObject> modules;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,10 @@ public class NavigationScript : MonoBehaviour
 
     public void OpenModule(int module)
     {
+        foreach(GameObject m in modules)
+        {
+            if(m.activeSelf) m.SetActive(false);
+        }
         if(contentImage.gameObject.activeSelf)
         {
             contentImage.gameObject.SetActive(false);
