@@ -5,14 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PressKeyToContinue : MonoBehaviour
 {
-
-    [SerializeField]
-    private string nextScene = "Main";
-
-    private void Awake()
-    {
-    }
-
     void Update()
     {
         if(!Input.GetKey(KeyCode.Escape) && Input.anyKeyDown)

@@ -32,7 +32,6 @@ public class NavigationScript : MonoBehaviour
         if(Input.GetKey("escape"))
         {
             Application.Quit();
-            if(EditorApplication.isPlaying == true) UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 
