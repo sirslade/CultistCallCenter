@@ -28,6 +28,7 @@ public class ModuleScript : MonoBehaviour
     private void Awake()
     {
         contentSections[0].SetActive(true);
+        displayImage.sprite = displayImages[0];
     }
 
     // Start is called before the first frame update
@@ -48,20 +49,32 @@ public class ModuleScript : MonoBehaviour
         FinishSection();
     }
 
-    public void IncorrectAnswer()
+    public void IncorrectAnswer(Button button)
     {
-        // Some sort of show 
+        button.enabled = false;
+        Text text = button.GetComponentInChildren<Text>();
+        text.color = Color.red;
+        text.text = "X";
     }
 
     void FinishSection()
     {
         contentSections[currentSection].SetActive(false);
         currentSection++;
-        if(currentSection > contentSections.Count)
+        if(currentSection > contentSections.Count - 1)
         {
             navScript.ModuleComplete(moduleNumber);
         } else {
-        contentSections[currentSection].SetActive(true);
+            contentSections[currentSection].SetActive(true);
+            if(!(currentSection >= displayImages.Count)) {
+            displayImage.sprite = displayImages[currentSection];
+            }
         }
+    }
+
+    public void ClearModule()
+    {
+        currentSection = 0;
+        displayImage.gameObject.SetActive(false);
     }
 }

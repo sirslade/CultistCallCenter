@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class NavigationScript : MonoBehaviour
 {
@@ -28,7 +29,8 @@ public class NavigationScript : MonoBehaviour
     {
         if(Input.GetKey("escape"))
         {
-            Exit();
+            Application.Quit();
+            if(EditorApplication.isPlaying == true) UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 

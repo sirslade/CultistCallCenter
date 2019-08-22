@@ -19,5 +19,9 @@ public class PressKeyToContinue : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }

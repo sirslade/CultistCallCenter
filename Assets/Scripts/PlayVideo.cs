@@ -38,6 +38,7 @@ public class PlayVideo : MonoBehaviour
 
     public void playModule(int module)
     {
+        if(videoPlayer != null && videoPlayer.isPlaying) videoPlayer.Stop();
         currentModule = module;
         Application.runInBackground = true;
         videoToPlay = videos[module];
@@ -69,6 +70,7 @@ public class PlayVideo : MonoBehaviour
         //We want to play from video clip not from url
         
         videoPlayer.source = VideoSource.VideoClip;
+        videoPlayer.aspectRatio = 0;
 
         // Vide clip from Url
         //videoPlayer.source = VideoSource.Url;
