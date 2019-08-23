@@ -53,7 +53,7 @@ public class ModuleScript : MonoBehaviour
 
     public void IncorrectAnswer(Button button)
     {
-        button.enabled = false;
+        button.interactable = false;
         Text text = button.GetComponentInChildren<Text>();
         text.color = Color.red;
         text.text = "X";
@@ -88,15 +88,16 @@ public class ModuleScript : MonoBehaviour
         Button button = buttonListForModule4[order];
         if(orderCountForModule4 == order)
         {
-            button.enabled = false;
+            button.interactable = false;
             Text buttonText = button.GetComponentInChildren<Text>();
             buttonText.color = Color.green;
             buttonText.text = buttonText.text + " ✓";
             orderCountForModule4++;
-        }
-        if(order == 3)
+            if(order == 3)
         {
             FinishSection();
         }
+        }
+        
     }
 }

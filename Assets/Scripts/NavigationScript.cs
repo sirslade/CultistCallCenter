@@ -51,6 +51,11 @@ public class NavigationScript : MonoBehaviour
         }
         contentImage.sprite = contentImages[module];
         videoScript.playModule(module);
+        foreach(Button b in modButtons)
+        {
+            if(!b.interactable) b.interactable = true;
+        }
+        modButtons[module].interactable = false;
     }
 
     public void ModuleComplete(int module)
@@ -59,6 +64,7 @@ public class NavigationScript : MonoBehaviour
         text.text = "Module Complete!";
         text.color = Color.green;
         text.fontSize = 14;
+        modButtons[module].interactable = true;
     }
 
     public void Exit()
