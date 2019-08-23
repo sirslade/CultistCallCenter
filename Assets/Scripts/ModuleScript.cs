@@ -27,6 +27,11 @@ public class ModuleScript : MonoBehaviour
     [SerializeField]
     private List<Button> buttonListForModule4;
 
+    [SerializeField]
+    private List<Slider> slidersForMod3;
+    [SerializeField]
+    private Text finalText;
+
     private void Awake()
     {
         contentSections[0].SetActive(true);
@@ -99,5 +104,16 @@ public class ModuleScript : MonoBehaviour
         }
         }
         
+    }
+
+
+    public void FillSliderAndContinue(int value)
+    {
+        //Fuck it, clock's tickin'
+        foreach(Slider s in slidersForMod3) {
+            s.value = s.value + (float)(value * 0.1); 
+            finalText.text = finalText.text + s.value.ToString();
+            }
+        FinishSection();
     }
 }
