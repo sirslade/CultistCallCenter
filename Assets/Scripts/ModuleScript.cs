@@ -77,6 +77,11 @@ public class ModuleScript : MonoBehaviour
             if(!(currentSection >= displayImages.Count)) {
             displayImage.sprite = displayImages[currentSection];
             }
+            if(finalText != null) { 
+                float finalValue = slidersForMod3[1].value * 100;
+                finalText.color = Color.magenta;
+                finalText.text = finalValue.ToString() + "%"; 
+                }
         }
     }
 
@@ -111,8 +116,7 @@ public class ModuleScript : MonoBehaviour
     {
         //Fuck it, clock's tickin'
         foreach(Slider s in slidersForMod3) {
-            s.value = s.value + (float)(value * 0.1); 
-            finalText.text = finalText.text + s.value.ToString();
+            s.value = s.value + (float)(value * 0.1);
             }
         FinishSection();
     }

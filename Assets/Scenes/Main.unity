@@ -120,7 +120,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1102668630
+--- !u!1001 &1531279701
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -237,148 +237,43 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 411095602888729140, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095602888729140, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 111.99999
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095602888729140, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 224
-      objectReference: {fileID: 0}
-    - target: {fileID: 3775686153630407671, guid: b87ccc45451e8114a9d667cd28a8781e,
+    - target: {fileID: 6194029972468086665, guid: b87ccc45451e8114a9d667cd28a8781e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 235673750979298122, guid: b87ccc45451e8114a9d667cd28a8781e,
+    - target: {fileID: 2480008955955130610, guid: b87ccc45451e8114a9d667cd28a8781e,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401381801258887872, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641996320968746424, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641996320968746424, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.UI.Button, UnityEngine.UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641996320968746424, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      propertyPath: finalText
       value: 
-      objectReference: {fileID: 1561366821}
-    - target: {fileID: 3082462826125914153, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1727719382}
     - target: {fileID: 411095603529575860, guid: b87ccc45451e8114a9d667cd28a8781e,
         type: 3}
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 411095602203611673, guid: b87ccc45451e8114a9d667cd28a8781e,
+    - target: {fileID: 2049656417699476826, guid: b87ccc45451e8114a9d667cd28a8781e,
         type: 3}
-      propertyPath: m_Interactable
-      value: 1
+      propertyPath: m_AnchoredPosition.y
+      value: 112.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 411095603529575867, guid: b87ccc45451e8114a9d667cd28a8781e,
+    - target: {fileID: 2049656417699476826, guid: b87ccc45451e8114a9d667cd28a8781e,
         type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575352, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 88924ec800b5824489f5dd7463973105,
-        type: 3}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411095601709575353, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1188764228397495481, guid: b87ccc45451e8114a9d667cd28a8781e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
+      propertyPath: m_SizeDelta.y
+      value: 224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b87ccc45451e8114a9d667cd28a8781e, type: 3}
---- !u!1 &1516075628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 411095603529575862, guid: b87ccc45451e8114a9d667cd28a8781e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1102668630}
-  m_PrefabAsset: {fileID: 0}
---- !u!222 &1516075636
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516075628}
-  m_CullTransparentMesh: 0
---- !u!114 &1561366821 stripped
+--- !u!114 &1727719382 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5641996320968746424, guid: b87ccc45451e8114a9d667cd28a8781e,
+  m_CorrespondingSourceObject: {fileID: 2139883930724105933, guid: b87ccc45451e8114a9d667cd28a8781e,
     type: 3}
-  m_PrefabInstance: {fileID: 1102668630}
+  m_PrefabInstance: {fileID: 1531279701}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1932246120

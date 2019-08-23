@@ -49,6 +49,7 @@ public class NavigationScript : MonoBehaviour
         {
             contentImage.gameObject.SetActive(false);
         }
+        contentImage.preserveAspect = true;
         contentImage.sprite = contentImages[module];
         videoScript.playModule(module);
         foreach(Button b in modButtons)
